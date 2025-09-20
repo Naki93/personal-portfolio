@@ -180,6 +180,11 @@ h2{
   font-size: 1rem;
 }
 
+.crop{
+  text-align: center;
+  margin: 20px;
+}
+
 .center{
   height: 60vh;
   padding: 5px;
