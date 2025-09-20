@@ -303,14 +303,15 @@ footer {
 /* Mobile menu */
 @media (max-width: 768px) {
   .nav {
+    display:none;
     position: fixed;
-    top: 0;
+    /* top: 0;
     right: 0;
     height: 100vh;
-    width: 70%;
-    /* top: 70px;
-    right: 0; */
-    background: rgb(158, 158, 158);
+    width: 70%; */
+    top: 70px;
+    right: 0;
+    background: rgb(233, 227, 227);
     color: rgb(20, 20, 20);
     width: 200px;
     transform: translateX(100%);
