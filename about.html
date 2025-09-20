@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">Anna</a>
+      <nav class="nav" id="navMenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <!-- <li><a href="#fun">🌱 Fun</a></li>  -->
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+    <section class="center">
+      <h2 class="about">About</h2>
+      <p class="description">
+        I’m a beginner web and mobile developer. I enjoy building small,
+        functional apps and exploring creative ways to make them look good and
+        feel intuitive.<br />
+        I’m particularly interested in UI design and layouts, making apps that
+        are not only functional but also visually appealing. <br />I love
+        learning new technologies and improving my coding and design skills
+        every day. <br />When I’m not coding, I enjoy journaling and I like to
+        game from time to time which inspired me to create the God of War app.
+      </p>
+    </section>
+    <script>
+      // hamburger toggle
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

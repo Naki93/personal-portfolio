@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Anna</a>
+      <nav class="nav" id="navMenu">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+           <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#fun">🌱 Fun</a></li>  -->
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+    <main class="hero">
+      <div class="hero-text">
+        <h1>Hi, I’m <span class="highlight">Anna</span></h1>
+        <h2 class="tagline">
+          Web Developer | <span class="designer">Web Designer</span>
+        </h2>
+        <p class="description">
+          I create websites that are
+          <span>user-friendly, responsive, and visually clear</span class="highlight">. <br>From
+          layout and design to interaction, I focus on 
+          turning ideas into <br>functional digital solutions that solve real
+          problems and deliver value to users.
+        </p>
+        <br />
+        <!-- <div class="cta-btns">
+            <a href="#projects" class="btn">FUN</a>
+            
+          </div> -->
+      </div>
+      <!-- ✅ Correct placement -->
+      <div class="hero-img">
+        <img src="./images/L2134773534.jpg" alt="Anna portrait" />
+        <!-- <div class="blob-animation"></div> -->
+      </div>
+    </main>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="./images/event8.PNG" alt="Project 3" />
+          
+          <h4>Event Management App</h4>
+          <p>React Event Management App.</p>
+          <a href="https://github.com/Naki93/eventmanagementApp" class="btn medium">View</a>
+        </article>
+        <article class="project-card">
+          <img src="./images/quiz2.png" alt="Simple Flutter Quiz App" />
+          <h4>Simple Flutter Quiz App.</h4>
+          <p>Simple God of War Quiz.</p>
+          <a href="https://github.com/Naki93/god-of-war-quiz" class="btn medium">View</a>
+        </article>
+        <article class="project-card">
+          <img class="project1" src="./images/spacia1.png" alt="Project 1" />
+          <h4>Spacia</h4>
+          <p>Visual Spacing App.</p>
+          <a href="https://github.com/Naki93/Spacia" class="btn medium">View</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p class="email">Email: annamashala@gmail.com</p>
+      <div class="social-icons">
+        <a href="https://github.com/Naki93" target="_blank">
+          <img class="github" src="./images/github.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/anna-m-a535a1150/" target="_blank">
+          <img class="linkedin" src="./images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <!-- <a href="https://linkedin.com/in/yourusername" target="_blank">
+          <img class="linkedin" src="./images/email.png" alt="LinkedIn" />
+        </a> -->
+      </div>
+    </section>
+
+    <footer>
+      <p class="bottom">© 2025 Anna. Built with ❤️</p>
+    </footer>
+
+    <script>
+      // hamburger toggle
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
