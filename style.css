@@ -217,7 +217,9 @@ h2{
 }
 
 .btn.medium {
-  background-color: #4b4848;
+  /* background-color: #4b4848; */
+  background-color: rgb(240, 209, 224);
+  color:rgb(20, 20, 20);
 }
 
 .social-icons a img {
