@@ -102,11 +102,29 @@
     <script>
       // hamburger toggle
       const hamburger = document.getElementById("hamburger");
-      const navMenu = document.getElementById("navMenu");
-      hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-        hamburger.classList.toggle("open");
-      });
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active"); // show/hide nav
+  hamburger.classList.toggle("open"); // hamburger animation
+  document.body.classList.toggle("menu-open"); // disable/enable scroll
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll("#navMenu a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    hamburger.classList.remove("open");
+    document.body.classList.remove("menu-open"); // re-enable scroll
+  });
+});
+
+      // const hamburger = document.getElementById("hamburger");
+      // const navMenu = document.getElementById("navMenu");
+      // hamburger.addEventListener("click", () => {
+      //   navMenu.classList.toggle("active");
+      //   hamburger.classList.toggle("open");
+      // });
     </script>
   </body>
 </html>
